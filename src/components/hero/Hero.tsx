@@ -7,12 +7,13 @@ import DeliveredMeals from './delivered-meal/DeliveredMeals';
 
 const HeroSection = styled.section`
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 `;
 
 const StyledHero = styled.div`
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
