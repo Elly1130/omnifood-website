@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import NavLink from '../ui/NavLink';
 
 const Header = styled.header`
   display: flex;
@@ -17,12 +18,27 @@ const ImageWrapper = styled.div`
   /* display: flex; */
 `;
 
+const NavigationList = styled.ul`
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+`;
+
 const Navigation = () => {
   return <Header>
     <ImageWrapper>
       <Image src='/img/omnifood-logo.png' alt='Omnifood logo' layout='fill' objectFit='contain' objectPosition='left' />
     </ImageWrapper>
-    <nav>Navigation</nav>
+    <nav>
+      <NavigationList>
+        <NavLink link='#'>Section&nbsp;1</NavLink>
+        <NavLink link='#'>Section&nbsp;2</NavLink>
+        <NavLink link='#'>Section&nbsp;3</NavLink>
+        <NavLink link='#'>Section&nbsp;4</NavLink>
+        <NavLink link='#' styledButton>Section&nbsp;5</NavLink>
+      </NavigationList>
+    </nav>
   </Header>;
 };
 

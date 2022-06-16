@@ -5,15 +5,18 @@ type StyledButtonProps = {
   primary?: boolean;
 };
 
-const StyledA = styled.a<StyledButtonProps>`
+export const Btn = styled.a`
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+`;
+
+const StyledA = styled(Btn) <StyledButtonProps>`
   display: inline-block;
   background-color: ${props => props.primary ? '#e67e22' : '#fff'};
   color: ${props => props.primary ? '#fff' : '#555'};
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
   transition: all 0.3s;
 
   &:hover, &:active {

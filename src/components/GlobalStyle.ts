@@ -35,9 +35,14 @@ export const OrangeHighlight = styled.span`
 
 - Font weight
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - Line height
 Default: 1
+Small: 1.06
+Paragraph default: 1.6
 
 --- 02 COLORS
 
@@ -45,6 +50,7 @@ Default: 1
 - Tints:
 #fdf2e9
 - Shades:
+#cf711f
 - Accents:
 - Greys
 #333
@@ -53,6 +59,8 @@ Default: 1
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
+
+Default: 9px
 
 --- 07 WHITESPACE
 
