@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import { Grid } from '../how-it-works/HowItWorks';
 
 import Button from '../ui/Button';
 import Heading from '../ui/Heading';
@@ -10,13 +11,11 @@ const HeroSection = styled.section`
   padding: 4.8rem 0 9.6rem 0;
 `;
 
-const StyledHero = styled.div`
+const StyledHero = styled(Grid)`
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
   align-items: center;
 `;
 

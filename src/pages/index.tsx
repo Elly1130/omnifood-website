@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import Hero from '../components/hero/Hero';
+import HowItWorks from '../components/how-it-works/HowItWorks';
 
 type Props = {
   images: string[];
@@ -13,6 +14,7 @@ const Home: React.FC<Props> = ({ images }) => {
       <title>Omnifood</title>
     </Head>
     <Hero images={images}></Hero>
+    <HowItWorks />
   </>;
 };
 
