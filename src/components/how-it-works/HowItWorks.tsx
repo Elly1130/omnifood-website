@@ -15,7 +15,7 @@ const ContainerGrid = styled(Grid)`
   margin: 0 auto;
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;

@@ -37,6 +37,16 @@ const StyledSubheading = styled.span`
   letter-spacing: 0.75px;
 `;
 
+const StyledFeatured = styled.h2`
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+`;
+
 type HeadingProps = {
   classification: string;
   children?: React.ReactNode;
@@ -49,6 +59,8 @@ const Heading: React.FC<HeadingProps> = (props) => {
     return <StyledSubheading>{props.children}</StyledSubheading>;
   } else if (props.classification === 'secondary') {
     return <StyledH2>{props.children}</StyledH2>;
+  } else if (props.classification === 'featured') {
+    return <StyledFeatured>{props.children}</StyledFeatured>;
   } else {
     return <StyledH3>{props.children}</StyledH3>;
   }

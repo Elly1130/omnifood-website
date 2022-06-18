@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import FeaturedIn from '../components/featured-in/FeaturedIn';
 
 import Hero from '../components/hero/Hero';
 import HowItWorks from '../components/how-it-works/HowItWorks';
@@ -14,6 +15,7 @@ const Home: React.FC<Props> = ({ images }) => {
       <title>Omnifood</title>
     </Head>
     <Hero images={images}></Hero>
+    <FeaturedIn />
     <HowItWorks />
   </>;
 };

@@ -77,6 +77,7 @@ Paragraph default: 1.6
 - Greys
 #333
 #555
+#888
 
 --- 05 SHADOWS
 
