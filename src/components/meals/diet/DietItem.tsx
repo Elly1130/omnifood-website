@@ -1,7 +1,7 @@
 import { IoCheckmarkOutline } from "react-icons/io5";
 import styled from 'styled-components';
 
-const ListItem = styled.li`
+export const ListItem = styled.li`
   font-size: 1.8rem;
   display: flex;
   align-items: center;

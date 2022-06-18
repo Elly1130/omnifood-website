@@ -7,7 +7,7 @@ const SectionHow = styled.section`
   padding: 9.6rem 0;
 `;
 
-const ContainerGrid = styled(Grid)`
+export const ContainerGrid = styled(Grid)`
   ${Grid2Cols}
   ${GridCenterV}
   max-width: 120rem;

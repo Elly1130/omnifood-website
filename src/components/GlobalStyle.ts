@@ -33,6 +33,15 @@ export const Grid = styled.div`
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem;
+
+  :last-child {
+    margin-bottom: 0;
+  } */
+
+  :not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
 `;
 
 export const Grid2Cols = css`
@@ -41,6 +50,10 @@ export const Grid2Cols = css`
 
 export const Grid3Cols = css`
   grid-template-columns: repeat(3, 1fr);
+`;
+
+export const Grid4Cols = css`
+  grid-template-columns: repeat(4, 1fr);
 `;
 
 export const GridCenterV = css`

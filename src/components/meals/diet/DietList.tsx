@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Heading from '../../ui/Heading';
 import DietItem from './DietItem';
 
-const List = styled.ul`
+export const List = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
