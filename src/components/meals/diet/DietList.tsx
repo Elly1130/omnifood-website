@@ -26,7 +26,7 @@ const DietList = () => {
     <div>
       <Heading classification='tertiary'>Works with any diet: </Heading>
       <List>
-        {Diet.map(diet => <DietItem diet={diet} />)}
+        {Diet.map(diet => <DietItem key={diet} diet={diet} />)}
       </List>
     </div>
   );

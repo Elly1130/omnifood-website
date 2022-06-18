@@ -32,7 +32,7 @@ const DeliveredMeals: React.FC<Props> = ({ images }) => {
   return <>
     <StyledDeliveredMeals>
       <StyledDeliveredImage>
-        {images.map(image => <DeliveredImages image={image} />)}
+        {images.map(image => <DeliveredImages key={image} image={image} />)}
       </StyledDeliveredImage>
       <DeliveredText><OrangeHighlight>250,000+</OrangeHighlight> meals delivered last year!</DeliveredText>
     </StyledDeliveredMeals>

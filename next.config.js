@@ -5,7 +5,6 @@ const nextConfig = {
     // ssr and displayName are configured by default
     styledComponents: true,
   },
-  experimental: { images: { layoutRaw: true } },
 };
 
 module.exports = nextConfig;
