@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import { Grid } from '../how-it-works/HowItWorks';
+import { Grid } from '../GlobalStyle';
 
 import Button from '../ui/Button';
 import Heading from '../ui/Heading';

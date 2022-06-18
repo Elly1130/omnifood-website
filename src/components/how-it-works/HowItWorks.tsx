@@ -1,34 +1,36 @@
-import styled, { css } from 'styled-components';
-
-export const Grid = styled.div`
-  display: grid;
-  gap: 9.6rem;
-`;
-
-const Grid2Cols = css`
-  grid-template-columns: repeat(2, 1fr);
-`;
+import styled from 'styled-components';
+import { Grid, Grid2Cols, GridCenterV } from '../GlobalStyle';
+import Heading from '../ui/Heading';
+import Step from './step/Step';
 
 const SectionHow = styled.section`
   padding: 9.6rem 0;
-  background-color: rebeccapurple;
 `;
 
-const HowContainer = styled(Grid)`
+const ContainerGrid = styled(Grid)`
   ${Grid2Cols}
+  ${GridCenterV}
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 `;
 
+const Container = styled.div`
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  overflow: auto;
+`;
+
 const HowItWorks = () => {
   return <SectionHow>
-    <HowContainer>
-      <div>Test 1</div>
-      <div>Test 2</div>
-      <div>Test 3</div>
-      <div>Test 4</div>
-    </HowContainer>
+    <Container>
+      <Heading classification='subheading'>How it works</Heading>
+      <Heading classification='secondary'>Your daily dose of health in 3 simple steps</Heading>
+    </Container>
+    <ContainerGrid>
+      <Step />
+    </ContainerGrid>
   </SectionHow>;
 };
 

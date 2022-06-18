@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  height: 100%;
 }
 `;
 
@@ -25,6 +27,20 @@ export default GlobalStyle;
 export const OrangeHighlight = styled.span`
   color: #cf711f;
   font-weight: 700;
+`;
+
+export const Grid = styled.div`
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+`;
+
+export const Grid2Cols = css`
+  grid-template-columns: repeat(2, 1fr);
+`;
+
+export const GridCenterV = css`
+  align-items: center;
 `;
 
 /*
@@ -44,11 +60,17 @@ Default: 1
 Small: 1.06
 Paragraph default: 1.6
 
+- Letter spacing
+-0.5px
+0.75px
+1.2px
+
 --- 02 COLORS
 
 - Primary: #e67e22
 - Tints:
 #fdf2e9
+#fae5d3
 - Shades:
 #cf711f
 - Accents:
