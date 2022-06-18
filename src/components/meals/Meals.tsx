@@ -12,7 +12,7 @@ const MealsSection = styled.section`
   padding: 9.6rem 0;
 `;
 
-const MarginBottomMd = css`
+export const MarginBottomMd = css`
   margin-bottom: 4.8rem !important;
 `;
 

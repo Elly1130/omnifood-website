@@ -1,5 +1,9 @@
 import styled from 'styled-components';
+
+
+import { FeatureType, getFeatureData } from '../../../data/Features';
 import { Grid, Grid4Cols } from '../../GlobalStyle';
+import Feature from './Feature';
 
 const ContainerGrid = styled(Grid)`
   ${Grid4Cols}
@@ -8,13 +12,16 @@ const ContainerGrid = styled(Grid)`
   margin: 0 auto;
 `;
 
+export type FeatureProps = {
+  data: FeatureType;
+};
+
 const Features = () => {
+  const featureData = getFeatureData();
+
   return (
     <ContainerGrid>
-      <div>Feature 1</div>
-      <div>Feature 2</div>
-      <div>Feature 3</div>
-      <div>Feature 4</div>
+      {featureData.map(data => <Feature key={data.title} data={data} />)}
     </ContainerGrid>
   );
 };

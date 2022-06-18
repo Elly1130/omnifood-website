@@ -3,11 +3,13 @@ import { getPricingPlanData, PricingPlanType } from '../../../data/Pricing';
 import { Grid, Grid2Cols } from '../../GlobalStyle';
 
 import { Container } from '../../how-it-works/HowItWorks';
+import { MarginBottomMd } from '../../meals/Meals';
 import Heading from '../../ui/Heading';
 import PricingPlan from './PricingPlan';
 
 const ContainerGrid = styled(Grid)`
   ${Grid2Cols}
+  ${MarginBottomMd}
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
