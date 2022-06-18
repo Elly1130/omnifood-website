@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { GalleryProps } from '../Testimonials';
+import { GalleryProps } from './Testimonials';
 
 const Figure = styled.figure`
   overflow: hidden;

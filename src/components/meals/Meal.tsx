@@ -1,7 +1,7 @@
 import { IoFlameOutline, IoRestaurantOutline, IoStarOutline } from "react-icons/io5";
 import styled from 'styled-components';
 
-import { MealDataProps } from '../Meals';
+import { MealDataProps } from './Meals';
 
 const StyledMeal = styled.div`
   box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);

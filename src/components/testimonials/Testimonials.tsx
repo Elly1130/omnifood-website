@@ -4,8 +4,8 @@ import { GalleryType, getGalleryData } from '../../data/Gallery';
 import { getTestimonialData, TestimonialType } from '../../data/Testimonial';
 import { Grid, Grid2Cols, Grid3Cols } from '../GlobalStyle';
 import Heading from '../ui/Heading';
-import Gallery from './gallery/Gallery';
-import Testimonial from './testimonial/Testimonial';
+import Gallery from './Gallery';
+import Testimonial from './Testimonial';
 
 const TestimonialSection = styled(Grid)`
   grid-template-columns: 55fr 45fr;

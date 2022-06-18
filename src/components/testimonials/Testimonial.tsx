@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { TestimonialProps } from '../Testimonials';
+import { TestimonialProps } from './Testimonials';
 
 const Figure = styled.figure`
   img {

@@ -5,7 +5,7 @@ import { Grid, Grid3Cols } from '../GlobalStyle';
 import { Container } from '../how-it-works/HowItWorks';
 import Heading from '../ui/Heading';
 import DietList from './diet/DietList';
-import Meal from './meal/Meal';
+import Meal from './Meal';
 import Button from '../ui/Button';
 
 const MealsSection = styled.section`
