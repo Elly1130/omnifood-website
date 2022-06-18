@@ -24,7 +24,7 @@ const ContainerGrid = styled(Grid)`
   margin: 0 auto;
 `;
 
-const CenterContainer = styled(Container)`
+export const CenterContainer = styled(Container)`
   text-align: center;
 `;
 
@@ -40,19 +40,21 @@ export type MealDataProps = {
 const Meals = () => {
   const mealData = getMealData();
 
-  return <MealsSection>
-    <CenterContainer>
-      <Heading classification='subheading'>Meals</Heading>
-      <Heading classification='secondary'>Omnifood AI chooses from 5,000+ recipes</Heading>
-    </CenterContainer>
-    <ContainerGrid>
-      {mealData.map(meal => <Meal key={meal.title} meal={meal} />)}
-      <DietList />
-    </ContainerGrid>
-    <AllRecipes>
-      <Button link='#' isLink>See all recipes &rarr;</Button>
-    </AllRecipes>
-  </MealsSection>;
+  return (
+    <MealsSection>
+      <CenterContainer>
+        <Heading classification='subheading'>Meals</Heading>
+        <Heading classification='secondary'>Omnifood AI chooses from 5,000+ recipes</Heading>
+      </CenterContainer>
+      <ContainerGrid>
+        {mealData.map(meal => <Meal key={meal.title} meal={meal} />)}
+        <DietList />
+      </ContainerGrid>
+      <AllRecipes>
+        <Button link='#' isLink>See all recipes &rarr;</Button>
+      </AllRecipes>
+    </MealsSection>
+  );
 };
 
 export default Meals;

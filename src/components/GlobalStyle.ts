@@ -81,6 +81,7 @@ Paragraph default: 1.6
 - Greys
 #333
 #555
+#6f6f6f (lightest grey allowed on #fdf2e9)
 #888
 
 --- 05 SHADOWS
