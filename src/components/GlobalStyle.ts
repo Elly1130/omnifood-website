@@ -39,6 +39,10 @@ export const Grid2Cols = css`
   grid-template-columns: repeat(2, 1fr);
 `;
 
+export const Grid3Cols = css`
+  grid-template-columns: repeat(3, 1fr);
+`;
+
 export const GridCenterV = css`
   align-items: center;
 `;

@@ -4,6 +4,7 @@ import FeaturedIn from '../components/featured-in/FeaturedIn';
 
 import Hero from '../components/hero/Hero';
 import HowItWorks from '../components/how-it-works/HowItWorks';
+import Meals from '../components/meals/Meals';
 
 type Props = {
   images: string[];
@@ -17,6 +18,7 @@ const Home: React.FC<Props> = ({ images }) => {
     <Hero images={images}></Hero>
     <FeaturedIn />
     <HowItWorks />
+    <Meals />
   </>;
 };
 

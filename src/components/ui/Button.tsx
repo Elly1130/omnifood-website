@@ -30,18 +30,44 @@ const StyledA = styled(Btn) <StyledButtonProps>`
   }
 `;
 
+const StyledLink = styled.a`
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+  
+  &:hover, &:active {
+    color: #cf711f;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+  }
+`;
+
 type ButtonProps = {
   children?: React.ReactNode;
   link?: string;
   primary?: boolean;
+  isLink?: boolean;
   className?: string;
 };
 
 export default function Button(props: ButtonProps) {
   if (props.link) {
-    return <Link href={props.link}>
-      <StyledA primary={props.primary} className={props.className}>{props.children}</StyledA>
-    </Link >;
+    if (props.isLink) {
+      return (
+        <Link href={props.link}>
+          <StyledLink>{props.children}</StyledLink>
+        </Link >
+      );
+    } else {
+      return (
+        <Link href={props.link}>
+          <StyledA primary={props.primary} className={props.className}>{props.children}</StyledA>
+        </Link >
+      );
+    }
   }
   return <button>{props.children}</button>;
 }
