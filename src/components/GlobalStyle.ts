@@ -4,12 +4,14 @@ const size = {
   laptopM: '84em',
   landscapeTablet: '75em',
   tablet: '59em',
+  tabletS: '44em',
 };
 
 export const device = {
   laptopS: `max-width: ${size.laptopM}`,
   landscapeTablet: `max-width: ${size.landscapeTablet}`,
   tablet: `max-width: ${size.tablet}`,
+  tabletS: `max-width: ${size.tabletS}`,
 };
 
 const GlobalStyle = createGlobalStyle`

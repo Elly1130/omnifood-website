@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../GlobalStyle';
 
 import { List } from '../../meals/diet/DietList';
 import Button from '../../ui/Button';
@@ -34,6 +35,10 @@ const PricingPlanDiv = styled.div`
       padding: 0.8rem 8rem;
       transform: rotate(45deg);
     }
+  }
+
+  @media (${device.tabletS}) {
+    width: 100%;
   }
 `;
 

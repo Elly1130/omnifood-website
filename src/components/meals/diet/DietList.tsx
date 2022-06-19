@@ -1,6 +1,14 @@
 import styled from 'styled-components';
+import { device } from '../../GlobalStyle';
 import Heading from '../../ui/Heading';
 import DietItem from './DietItem';
+
+const DietDiv = styled.div`
+  @media (${device.tabletS}) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+`;
 
 export const List = styled.ul`
   list-style: none;
@@ -24,12 +32,12 @@ const DietList = () => {
   ];
 
   return (
-    <div>
+    <DietDiv>
       <Heading classification='tertiary'>Works with any diet: </Heading>
       <List>
         {Diet.map(diet => <DietItem key={diet} diet={diet} />)}
       </List>
-    </div>
+    </DietDiv>
   );
 };
 

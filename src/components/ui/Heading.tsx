@@ -27,6 +27,10 @@ const StyledH2 = styled.h2`
   @media (${device.landscapeTablet}) {
     font-size: 3.6rem;
   }
+
+  @media (${device.tabletS}) {
+    margin-bottom: 4.8rem;
+  }
 `;
 
 const StyledH3 = styled.h3`

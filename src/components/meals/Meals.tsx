@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { getMealData, MealType } from '../../data/Meal';
-import { Grid, Grid3Cols } from '../GlobalStyle';
+import { Grid, Grid2Cols, Grid3Cols, device } from '../GlobalStyle';
 import { Container } from '../how-it-works/HowItWorks';
 import Heading from '../ui/Heading';
 import DietList from './diet/DietList';
@@ -22,6 +22,10 @@ const ContainerGrid = styled(Grid)`
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+  
+  @media (${device.tabletS}) {
+    ${Grid2Cols}
+  }
 `;
 
 export const CenterContainer = styled(Container)`
