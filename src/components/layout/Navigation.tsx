@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../GlobalStyle';
 import NavLink from '../ui/NavLink';
 
 const Header = styled.header`
@@ -8,6 +9,10 @@ const Header = styled.header`
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+
+  @media (${device.landscapeTablet}) {
+    padding: 0 3.2rem;
+  }
 `;
 
 const ImageWrapper = styled.a`
@@ -20,7 +25,11 @@ const NavigationList = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
+
+  @media (${device.landscapeTablet}) {
+    gap: 3.2rem;
+  }
 `;
 
 const Navigation = () => {

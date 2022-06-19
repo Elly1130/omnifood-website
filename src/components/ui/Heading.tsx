@@ -23,6 +23,10 @@ const StyledH2 = styled.h2`
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+
+  @media (${device.landscapeTablet}) {
+    font-size: 3.6rem;
+  }
 `;
 
 const StyledH3 = styled.h3`
@@ -30,6 +34,10 @@ const StyledH3 = styled.h3`
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+
+  @media (${device.landscapeTablet}) {
+    font-size: 2.4rem;
+  }
 `;
 
 const StyledSubheading = styled.span`

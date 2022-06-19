@@ -1,5 +1,15 @@
 import styled, { createGlobalStyle, css } from 'styled-components';
 
+const size = {
+  laptopM: '84em',
+  landscapeTablet: '75em',
+};
+
+export const device = {
+  laptopS: `max-width: ${size.laptopM}`,
+  landscapeTablet: `max-width: ${size.landscapeTablet}`,
+};
+
 const GlobalStyle = createGlobalStyle`
 * {
   padding: 0;
@@ -16,6 +26,10 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   height: 100%;
+
+  @media (${device.landscapeTablet}) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -44,6 +58,11 @@ export const Grid = styled.div`
     margin-bottom: 0;
   }
 
+  @media (${device.landscapeTablet}) {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
   /* :not(:last-child) {
     margin-bottom: 9.6rem;
   } */
@@ -68,14 +87,6 @@ export const Grid5Cols = css`
 export const GridCenterV = css`
   align-items: center;
 `;
-
-const size = {
-  laptopM: '84em',
-};
-
-export const device = {
-  laptopS: `max-width: ${size.laptopM}`,
-};
 
 /*
 --- 01 TYPOGRAPHY SYSTEM
