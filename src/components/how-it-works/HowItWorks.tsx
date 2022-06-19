@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, Grid2Cols, GridCenterV } from '../GlobalStyle';
+import { Grid, Grid2Cols, GridCenterV, device } from '../GlobalStyle';
 import Heading from '../ui/Heading';
 import Step from './step/Step';
 
@@ -13,6 +13,16 @@ export const ContainerGrid = styled(Grid)`
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+
+  @media (${device.phone}) {
+    div:nth-child(3) {
+      grid-row: 1;
+    }
+
+    div:nth-child(6) {
+      grid-row: 5;
+    }
+  }
 `;
 
 export const Container = styled.div`

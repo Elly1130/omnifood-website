@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import styled from 'styled-components';
 
 import { getStepData, StepDataType } from '../../../data/Steps';
 import StepImage from './StepImage';

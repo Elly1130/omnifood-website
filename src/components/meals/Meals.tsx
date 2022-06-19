@@ -22,10 +22,6 @@ const ContainerGrid = styled(Grid)`
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
-  
-  @media (${device.tabletS}) {
-    ${Grid2Cols}
-  }
 `;
 
 export const CenterContainer = styled(Container)`

@@ -20,6 +20,10 @@ const ContainerGrid = styled(Grid)`
   @media (${device.tablet}) {
     grid-template-columns: 3fr 2fr;
   }
+
+  @media (${device.phone}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Text = styled.div`
@@ -37,12 +41,21 @@ const Text = styled.div`
     line-height: 1.8;
     margin-bottom: 4.8rem;
   }
+
+  @media (${device.phone}) {
+    padding: 3.2rem;
+  }
 `;
 
 const Image = styled.div`
   background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url('/img/eating.jpg');
   background-size: cover;
   background-position: center;
+
+  @media (${device.phone}) {
+    height: 32rem;
+    grid-row: 1;
+  }
 `;
 
 const CallToAction = () => {

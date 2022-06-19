@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import { device } from '../GlobalStyle';
 
 type StyledButtonProps = {
   primary?: boolean;
@@ -8,6 +9,10 @@ type StyledButtonProps = {
 export const Btn = styled.a`
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  @media (${device.phone}) {
+    padding: 2.4rem 1.6rem;
+  }
 `;
 
 const StyledButton = styled(Btn)`

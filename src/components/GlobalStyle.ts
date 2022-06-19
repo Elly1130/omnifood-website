@@ -5,6 +5,7 @@ const size = {
   landscapeTablet: '75em',
   tablet: '59em',
   tabletS: '44em',
+  phone: '35em',
 };
 
 export const device = {
@@ -12,6 +13,7 @@ export const device = {
   landscapeTablet: `max-width: ${size.landscapeTablet}`,
   tablet: `max-width: ${size.tablet}`,
   tabletS: `max-width: ${size.tabletS}`,
+  phone: `max-width: ${size.phone}`,
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -73,6 +75,11 @@ export const Grid = styled.div`
     row-gap: 6.4rem;
   }
 
+  @media (${device.phone}) {
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
+  }
+
   /* :not(:last-child) {
     margin-bottom: 9.6rem;
   } */
@@ -80,14 +87,34 @@ export const Grid = styled.div`
 
 export const Grid2Cols = css`
   grid-template-columns: repeat(2, 1fr);
+
+  @media (${device.phone}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Grid3Cols = css`
   grid-template-columns: repeat(3, 1fr);
+
+  @media (${device.tabletS}) {
+    ${Grid2Cols}
+  }
+
+  @media (${device.phone}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Grid4Cols = css`
   grid-template-columns: repeat(4, 1fr);
+
+  @media (${device.tabletS}) {
+    ${Grid2Cols}
+  }
+
+  @media (${device.phone}) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Grid5Cols = css`

@@ -20,6 +20,10 @@ const Logos = styled.div`
     @media (${device.tablet}) {
       height: 2.4rem;
     }
+
+    @media (${device.phone}) {
+      height: 1.2rem;
+    }
   }
 `;
 

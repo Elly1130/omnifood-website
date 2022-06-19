@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styled, { css } from 'styled-components';
 
 import { StepDataProps } from './Step';
+import { device } from '../../GlobalStyle';
 
 const BeforeAfter = css`
   content: "";
@@ -37,6 +38,10 @@ const ImageWrapper = styled.div`
 
   img{
     width: 35%;
+  }
+
+  @media (${device.phone}) {
+    transform: translateY(2.4rem);
   }
 `;
 

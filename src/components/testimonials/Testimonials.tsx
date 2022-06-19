@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { GalleryType, getGalleryData } from '../../data/Gallery';
 
 import { getTestimonialData, TestimonialType } from '../../data/Testimonial';
-import { Grid, Grid2Cols, Grid3Cols, device, Grid6Cols } from '../GlobalStyle';
+import { Grid, Grid2Cols, Grid3Cols, device, Grid6Cols, Grid4Cols } from '../GlobalStyle';
 import Heading from '../ui/Heading';
 import Gallery from './Gallery';
 import Testimonial from './Testimonial';
@@ -44,7 +44,12 @@ const GalleryDiv = styled.div`
 
   @media (${device.tablet}) {
     ${Grid6Cols}
-  }  
+  } 
+  
+  @media (${device.phone}) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  } 
 `;
 
 export type TestimonialProps = {

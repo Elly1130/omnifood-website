@@ -8,6 +8,10 @@ import DeliveredMeals from './delivered-meal/DeliveredMeals';
 const HeroSection = styled.section`
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
+
+  @media (${device.phone}) {
+    padding: 2.4rem 0 6.4rem 0;
+  }
 `;
 
 const StyledHero = styled(Grid)`
@@ -23,6 +27,10 @@ const StyledHero = styled(Grid)`
     @media (${device.tablet}) {
       width: 60%;
     }
+
+    @media (${device.phone}) {
+      width: 80%;
+    }
   }
 
   @media (${device.laptopS}) {
@@ -37,6 +45,10 @@ const StyledHero = styled(Grid)`
     grid-template-columns: 1fr;
     padding: 0 8rem;
     gap: 6.4rem;
+  }
+
+  @media (${device.phone}) {
+    padding: 0 3.2rem;
   }
 `;
 
