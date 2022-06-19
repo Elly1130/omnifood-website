@@ -23,15 +23,17 @@ export const Container = styled.div`
 `;
 
 const HowItWorks = () => {
-  return <SectionHow>
-    <Container>
-      <Heading classification='subheading'>How it works</Heading>
-      <Heading classification='secondary'>Your daily dose of health in 3 simple steps</Heading>
-    </Container>
-    <ContainerGrid>
-      <Step />
-    </ContainerGrid>
-  </SectionHow>;
+  return (
+    <SectionHow>
+      <Container>
+        <Heading classification='subheading'>How it works</Heading>
+        <Heading classification='secondary'>Your daily dose of health in 3 simple steps</Heading>
+      </Container>
+      <ContainerGrid>
+        <Step />
+      </ContainerGrid>
+    </SectionHow>
+  );
 };
 
 export default HowItWorks;
