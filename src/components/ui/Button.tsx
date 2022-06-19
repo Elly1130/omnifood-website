@@ -11,7 +11,7 @@ export const Btn = styled.a`
   border-radius: 9px;
 
   @media (${device.phone}) {
-    padding: 2.4rem 1.6rem;
+    padding: 2.4rem 1rem;
   }
 `;
 

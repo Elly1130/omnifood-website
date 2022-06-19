@@ -14,7 +14,8 @@ const HeroSection = styled.section`
   }
 `;
 
-const StyledHero = styled(Grid)`
+const StyledHero = styled.div`
+  display: grid;
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;

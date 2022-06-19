@@ -5,7 +5,7 @@ const size = {
   landscapeTablet: '75em',
   tablet: '59em',
   tabletS: '44em',
-  phone: '35em',
+  phone: '34em',
 };
 
 export const device = {
