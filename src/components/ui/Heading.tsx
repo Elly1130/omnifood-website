@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { device } from '../GlobalStyle';
 
 const StyledHeading = css`
   font-weight: 700;
@@ -11,6 +12,10 @@ const StyledH1 = styled.h1`
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
+
+  @media (${device.laptopS}) {
+    font-size: 4.4rem;
+  }
 `;
 
 const StyledH2 = styled.h2`

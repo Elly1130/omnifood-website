@@ -69,6 +69,14 @@ export const GridCenterV = css`
   align-items: center;
 `;
 
+const size = {
+  laptopM: '84em',
+};
+
+export const device = {
+  laptopS: `max-width: ${size.laptopM}`,
+};
+
 /*
 --- 01 TYPOGRAPHY SYSTEM
 

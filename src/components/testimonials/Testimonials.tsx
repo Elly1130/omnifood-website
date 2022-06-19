@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { GalleryType, getGalleryData } from '../../data/Gallery';
 
 import { getTestimonialData, TestimonialType } from '../../data/Testimonial';
-import { Grid, Grid2Cols, Grid3Cols } from '../GlobalStyle';
+import { Grid, Grid2Cols, Grid3Cols, device } from '../GlobalStyle';
 import Heading from '../ui/Heading';
 import Gallery from './Gallery';
 import Testimonial from './Testimonial';
@@ -30,6 +30,10 @@ const GalleryDiv = styled(Grid)`
   ${Grid3Cols}
   gap: 1.6rem;
   padding: 1.6rem;
+
+  @media (${device.laptopS}) {
+    ${Grid2Cols}
+  }
 `;
 
 export type TestimonialProps = {

@@ -74,7 +74,7 @@ const FooterNavList = styled.div`
     font-size: 1.6rem;
     line-height: 1.6;
 
-    .address {
+    p:first-child {
       margin-bottom: 2.4rem;
     }
   }
