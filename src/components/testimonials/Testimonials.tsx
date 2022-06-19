@@ -2,18 +2,20 @@ import styled from 'styled-components';
 import { GalleryType, getGalleryData } from '../../data/Gallery';
 
 import { getTestimonialData, TestimonialType } from '../../data/Testimonial';
-import { Grid, Grid2Cols, Grid3Cols, device } from '../GlobalStyle';
+import { Grid, Grid2Cols, Grid3Cols, device, Grid6Cols } from '../GlobalStyle';
 import Heading from '../ui/Heading';
 import Gallery from './Gallery';
 import Testimonial from './Testimonial';
 
-const TestimonialSection = styled(Grid)`
+const TestimonialSection = styled.section`
+  display: grid;
   grid-template-columns: 55fr 45fr;
   background-color: #fdf2e9;
-  row-gap: unset;
-  column-gap: unset;
   align-items: center;
-  margin-bottom: 0;
+
+  @media (${device.tablet}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const TestimonialContainer = styled.div`
@@ -39,6 +41,10 @@ const GalleryDiv = styled.div`
   @media (${device.laptopS}) {
     ${Grid2Cols}
   }
+
+  @media (${device.tablet}) {
+    ${Grid6Cols}
+  }  
 `;
 
 export type TestimonialProps = {
@@ -54,7 +60,7 @@ const Testimonials = () => {
   const galleryData = getGalleryData();
 
   return (
-    <TestimonialSection as={'section'}>
+    <TestimonialSection>
       <TestimonialContainer>
         <Heading classification='subheading'>Testimonials</Heading>
         <Heading classification='secondary'>Once you try it, you can't go back</Heading>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../GlobalStyle';
 
 import { Container } from '../how-it-works/HowItWorks';
 import Heading from '../ui/Heading';
@@ -15,6 +16,10 @@ const Logos = styled.div`
     height: 3.2rem;
     filter: brightness(0);
     opacity: 50%;
+
+    @media (${device.tablet}) {
+      height: 2.4rem;
+    }
   }
 `;
 

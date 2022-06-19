@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { OrangeHighlight } from '../../GlobalStyle';
+import { device, OrangeHighlight } from '../../GlobalStyle';
 import DeliveredImages from './DeliveredImages';
 
 const StyledDeliveredMeals = styled.div`
@@ -8,6 +8,11 @@ const StyledDeliveredMeals = styled.div`
   align-items: center;
   gap: 1.6rem;
   margin-top: 8rem;
+
+  @media (${device.tablet}) {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
 `;
 
 const StyledDeliveredImage = styled.div`

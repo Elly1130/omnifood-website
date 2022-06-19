@@ -3,11 +3,13 @@ import styled, { createGlobalStyle, css } from 'styled-components';
 const size = {
   laptopM: '84em',
   landscapeTablet: '75em',
+  tablet: '59em',
 };
 
 export const device = {
   laptopS: `max-width: ${size.laptopM}`,
   landscapeTablet: `max-width: ${size.landscapeTablet}`,
+  tablet: `max-width: ${size.tablet}`,
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -29,6 +31,10 @@ html {
 
   @media (${device.landscapeTablet}) {
     font-size: 56.25%;
+  }
+
+  @media (${device.tablet}) {
+    font-size: 50%;
   }
 }
 
@@ -84,6 +90,10 @@ export const Grid5Cols = css`
   grid-template-columns: repeat(5, 1fr);
 `;
 
+export const Grid6Cols = css`
+  grid-template-columns: repeat(6, 1fr);
+`;
+
 export const GridCenterV = css`
   align-items: center;
 `;
@@ -103,7 +113,10 @@ Bold: 700
 - Line height
 Default: 1
 Small: 1.06
+Medium: 1.2
 Paragraph default: 1.6
+Large: 1.8
+
 
 - Letter spacing
 -0.5px

@@ -1,5 +1,6 @@
 import { IoFlameOutline, IoRestaurantOutline, IoStarOutline } from "react-icons/io5";
 import styled from 'styled-components';
+import { device } from '../GlobalStyle';
 
 import { MealDataProps } from './Meals';
 
@@ -18,6 +19,11 @@ const StyledMeal = styled.div`
 const MealContent = styled.div`
   padding: 4.8rem;
   padding-top: 3.2rem;
+
+  @media (${device.tablet}) {
+    padding: 3.2rem;
+    padding-top: 2.4rem;
+  }
 `;
 
 const Image = styled.img`

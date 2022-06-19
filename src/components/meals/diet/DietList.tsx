@@ -7,6 +7,7 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  line-height: 1.2;
 `;
 
 const DietList = () => {

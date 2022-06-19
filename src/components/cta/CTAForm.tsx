@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import { Grid, Grid2Cols } from '../GlobalStyle';
+import { device, Grid, Grid2Cols } from '../GlobalStyle';
 
 import Button from '../ui/Button';
 
-const Form = styled(Grid)`
+const Form = styled.form`
+  display: grid;
   ${Grid2Cols}
   column-gap: 3.2rem;
   row-gap: 2.4rem;
@@ -42,17 +43,25 @@ const Form = styled(Grid)`
       background-color: #fff;
       color: #555;
     }
+
+    @media (${device.tablet}) {
+      margin-top: 1.2rem;
+    }
   }
 
   *:focus {
     outline: none;
     box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
   }
+
+  @media (${device.tablet}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const CTAForm = () => {
   return (
-    <Form as={'form'} action='#'>
+    <Form action='#'>
       <div>
         <label htmlFor='full-name'>Full Name</label>
         <input id='full-name' type="text" placeholder='John Smith' required />

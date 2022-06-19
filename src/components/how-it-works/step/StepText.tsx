@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../GlobalStyle';
 
 import Heading from '../../ui/Heading';
 import { StepDataProps } from './Step';
@@ -8,6 +9,10 @@ const StepNumber = styled.p`
   font-weight: 600;
   color: #ddd;
   margin-bottom: 1.2rem;
+
+  @media (${device.tablet}) {
+    font-size: 7.4rem;
+  }
 `;
 
 const StepDescription = styled.p`

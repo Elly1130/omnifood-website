@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Grid } from '../GlobalStyle';
+import { device, Grid } from '../GlobalStyle';
 import { Container } from '../how-it-works/HowItWorks';
 import Heading from '../ui/Heading';
 import CTAForm from './CTAForm';
@@ -16,6 +16,10 @@ const ContainerGrid = styled(Grid)`
   box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
   border-radius: 11px;
   overflow: hidden;
+
+  @media (${device.tablet}) {
+    grid-template-columns: 3fr 2fr;
+  }
 `;
 
 const Text = styled.div`
