@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import CallToAction from '../components/cta/CallToAction';
 import FeaturedIn from '../components/featured-in/FeaturedIn';
 
 import Hero from '../components/hero/Hero';
@@ -24,6 +25,7 @@ const Home: React.FC<Props> = ({ images }) => {
       <Meals />
       <Testimonials />
       <PricingFeatures />
+      <CallToAction />
     </>
   );
 };

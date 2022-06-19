@@ -5,6 +5,11 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  }
 }
 
 html {
@@ -88,16 +93,20 @@ Paragraph default: 1.6
 - Tints:
 #fdf2e9
 #fae5d3
+#eb984e
 - Shades:
 #cf711f
+#45260a
 - Accents:
 - Greys
 #333
 #555
 #6f6f6f (lightest grey allowed on #fdf2e9)
 #888
+#aaa
 
 --- 05 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
 
 --- 06 BORDER-RADIUS
 

@@ -10,6 +10,18 @@ export const Btn = styled.a`
   border-radius: 9px;
 `;
 
+const StyledButton = styled(Btn)`
+  display: inline-block;
+  background-color: #fff;
+  color: #555;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: inherit;
+`;
+
 const StyledA = styled(Btn) <StyledButtonProps>`
   display: inline-block;
   background-color: ${props => props.primary ? '#e67e22' : '#fff'};
@@ -69,5 +81,5 @@ export default function Button(props: ButtonProps) {
       );
     }
   }
-  return <button>{props.children}</button>;
+  return <StyledButton as={'button'}>{props.children}</StyledButton>;
 }
