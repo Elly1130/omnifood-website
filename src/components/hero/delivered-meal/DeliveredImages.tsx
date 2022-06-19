@@ -1,12 +1,11 @@
-import Image from 'next/image';
 import styled from 'styled-components';
+import { device } from '../../GlobalStyle';
 
-const ImageWrapper = styled.div`
+const Image = styled.img`
   width: 4.8rem;
   height: 4.8rem;
-  margin-left: -1.6rem;
-  position: relative;
   border-radius: 50%;
+  margin-right: -1.6rem;
   border: 3px solid #fdf2e9;
 `;
 
@@ -15,9 +14,7 @@ type ImageProps = {
 };
 
 const DeliveredImages: React.FC<ImageProps> = ({ image }) => {
-  return <ImageWrapper>
-    <Image src={image} alt='Customer Photo' layout='fill' />
-  </ImageWrapper>;
+  return <Image src={image} alt='Customer Photo' />;
 };
 
 export default DeliveredImages;

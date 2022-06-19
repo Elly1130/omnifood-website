@@ -28,6 +28,7 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   height: 100%;
+  overflow-x: hidden;
 
   @media (${device.landscapeTablet}) {
     font-size: 56.25%;
@@ -44,6 +45,7 @@ body {
   font-weight: 400;
   color: #555;
   height: 100%;
+  overflow-x: hidden;
 }
 `;
 

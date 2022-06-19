@@ -17,10 +17,9 @@ const StyledDeliveredMeals = styled.div`
 
 const StyledDeliveredImage = styled.div`
   display: flex;
-  margin-left: 1.6rem;
-
-  img {
-    border-radius: 50%;
+  
+  img:last-child { 
+    margin: 0;
   }
 `;
 

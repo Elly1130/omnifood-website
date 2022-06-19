@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styled from 'styled-components';
 import { device, Grid } from '../GlobalStyle';
 
@@ -48,7 +47,9 @@ const HeroDescription = styled.p`
 `;
 
 const HeroBox = styled.div`
-  text-align: center;
+  @media (${device.tablet}) {
+    text-align: center;
+  }
 `;
 
 

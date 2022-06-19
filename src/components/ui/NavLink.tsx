@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled, { css } from 'styled-components';
+import { device } from '../GlobalStyle';
 import { Btn } from './Button';
 
 const Styled = css`
@@ -12,6 +13,10 @@ const Styled = css`
 
   &:hover, &:active {
     cursor: pointer;
+  }
+
+  @media (${device.tablet}) {
+    font-size: 3rem;
   }
 `;
 
