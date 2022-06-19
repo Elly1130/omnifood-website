@@ -31,11 +31,11 @@ const Navigation = () => {
       </ImageWrapper>
       <nav>
         <NavigationList>
-          <NavLink link='#'>Section&nbsp;1</NavLink>
-          <NavLink link='#'>Section&nbsp;2</NavLink>
-          <NavLink link='#'>Section&nbsp;3</NavLink>
-          <NavLink link='#'>Section&nbsp;4</NavLink>
-          <NavLink link='#' styledButton>Section&nbsp;5</NavLink>
+          <NavLink link='#'>How it works</NavLink>
+          <NavLink link='#'>Meals</NavLink>
+          <NavLink link='#'>Testimonials</NavLink>
+          <NavLink link='#'>Pricing</NavLink>
+          <NavLink link='#' styledButton>Try for free</NavLink>
         </NavigationList>
       </nav>
     </Header>

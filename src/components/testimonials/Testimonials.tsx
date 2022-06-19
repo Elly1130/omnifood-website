@@ -13,6 +13,7 @@ const TestimonialSection = styled(Grid)`
   row-gap: unset;
   column-gap: unset;
   align-items: center;
+  margin-bottom: 0;
 `;
 
 const TestimonialContainer = styled.div`
