@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styled from 'styled-components';
 import NavLink from '../ui/NavLink';
 
@@ -11,11 +10,10 @@ const Header = styled.header`
   padding: 0 4.8rem;
 `;
 
-const ImageWrapper = styled.div`
-  width: 100%;
-  height: 2.2rem;
-  position: relative;
-  /* display: flex; */
+const ImageWrapper = styled.a`
+  img {
+    height: 2.2rem;
+  }
 `;
 
 const NavigationList = styled.ul`
@@ -26,20 +24,22 @@ const NavigationList = styled.ul`
 `;
 
 const Navigation = () => {
-  return <Header>
-    <ImageWrapper>
-      <Image src='/img/omnifood-logo.png' alt='Omnifood logo' layout='fill' objectFit='contain' objectPosition='left' />
-    </ImageWrapper>
-    <nav>
-      <NavigationList>
-        <NavLink link='#'>Section&nbsp;1</NavLink>
-        <NavLink link='#'>Section&nbsp;2</NavLink>
-        <NavLink link='#'>Section&nbsp;3</NavLink>
-        <NavLink link='#'>Section&nbsp;4</NavLink>
-        <NavLink link='#' styledButton>Section&nbsp;5</NavLink>
-      </NavigationList>
-    </nav>
-  </Header>;
+  return (
+    <Header>
+      <ImageWrapper href='#'>
+        <img src='/img/omnifood-logo.png' alt='Omnifood logo' />
+      </ImageWrapper>
+      <nav>
+        <NavigationList>
+          <NavLink link='#'>Section&nbsp;1</NavLink>
+          <NavLink link='#'>Section&nbsp;2</NavLink>
+          <NavLink link='#'>Section&nbsp;3</NavLink>
+          <NavLink link='#'>Section&nbsp;4</NavLink>
+          <NavLink link='#' styledButton>Section&nbsp;5</NavLink>
+        </NavigationList>
+      </nav>
+    </Header>
+  );
 };
 
 export default Navigation;

@@ -6,7 +6,8 @@ import Heading from '../ui/Heading';
 import CTAForm from './CTAForm';
 
 const CTA = styled.section`
-  padding: 9.6rem 0;
+  padding: 4.8rem 0;
+  padding-bottom: 12.8rem;
 `;
 
 const ContainerGrid = styled(Grid)`

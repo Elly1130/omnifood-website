@@ -61,6 +61,10 @@ export const Grid4Cols = css`
   grid-template-columns: repeat(4, 1fr);
 `;
 
+export const Grid5Cols = css`
+  grid-template-columns: repeat(5, 1fr);
+`;
+
 export const GridCenterV = css`
   align-items: center;
 `;
@@ -102,6 +106,7 @@ Paragraph default: 1.6
 #333
 #555
 #6f6f6f (lightest grey allowed on #fdf2e9)
+#767676 (lightest grey allowed on #fff)
 #888
 #aaa
 
