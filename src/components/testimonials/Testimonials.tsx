@@ -18,6 +18,10 @@ const TestimonialSection = styled(Grid)`
 
 const TestimonialContainer = styled.div`
   padding: 9.6rem;
+
+  @media (${device.landscapeTablet}) {
+    padding: 9.6rem 3.2rem;
+  }
 `;
 
 const TestimonialDiv = styled(Grid)`
@@ -26,7 +30,8 @@ const TestimonialDiv = styled(Grid)`
   column-gap: 8rem;
 `;
 
-const GalleryDiv = styled(Grid)`
+const GalleryDiv = styled.div`
+  display: grid;
   ${Grid3Cols}
   gap: 1.6rem;
   padding: 1.6rem;

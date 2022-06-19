@@ -21,6 +21,10 @@ const StyledHero = styled(Grid)`
   @media (${device.laptopS}) {
     max-width: 120rem;
   }
+
+  @media (${device.landscapeTablet}) {
+    gap: 4.8rem;
+  }
 `;
 
 const HeroDescription = styled.p`
